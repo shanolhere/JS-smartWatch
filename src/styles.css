@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+.app {
+}
+nav {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+.image {
+  width: 300px;
+  height: 290px;
+}
+.container {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 800px;
+  margin: 30px auto;
+}
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ul {
+  padding: 10px 0;
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+li {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* background-color: aquamarine; */
+}
+.black {
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+.grey {
+  background-color: #565681;
+}
+.brown {
+  background-color: #8a5362;
+}
+.cream {
+  background-color: #e9c7be;
+}
+button {
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #e46643;
+  font-size: 15px;
+}
+.features h3 {
+  padding-bottom: 10px;
+}
+.buy {
+  background-color: orange;
+  /* display: inline; */
+  width: 100px;
+}
+.active {
+  border: 2px solid yellow;
+}
+.imageContainer {
+  position: relative;
+}
+
+.heartbeatResult {
+  /* background-color: burlywood; */
+  position: absolute;
+  top: 38%;
+  left: 44%;
+  font-size: 24px;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+.heartbeatResult {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  visibility: hidden;
+}
+.heart {
+  color: red;
+  font-size: 25px;
+  animation: beat 5s linear 0s infinite alternate;
+  /* background-color: red; */
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.timeResult {
+  visibility: hidden;
+  position: absolute;
+  top: 44%;
+  left: 39%;
+  font-size: 24px;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
